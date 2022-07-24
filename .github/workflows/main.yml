@@ -28,6 +28,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Install Surge
-        run: npm install -g surge
+        run: npm install -g Surge
       - name: Run Surge
         run: surge ./Hello_WorldApp.surge.sh --token${{secrets.SURGE.TOKEN}}
