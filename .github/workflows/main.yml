@@ -6,7 +6,7 @@ name: Deploy Website
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,6 +28,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Install Surge
-        run: sudo npm install --g surge
+        run:  npm install -g surge
       - name: Run Surge
         run: surge ./ helloworldappbootcamp2020.surge.sh --token${{secrets.SURGE_TOKEN}}
