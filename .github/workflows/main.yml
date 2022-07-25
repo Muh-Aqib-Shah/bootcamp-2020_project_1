@@ -30,4 +30,4 @@ jobs:
       - name: Install Surge
         run: sudo npm install --g surge
       - name: Run Surge
-        run: surge ./helloworldappbootcamp2020.surge.sh --token${{secrets.SURGE_TOKEN}}
+        run: surge ./ helloworldappbootcamp2020.surge.sh --token${{secrets.SURGE_TOKEN}}
