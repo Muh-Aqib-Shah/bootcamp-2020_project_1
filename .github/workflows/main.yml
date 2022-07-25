@@ -21,4 +21,4 @@ jobs:
       run: npm install -g surge
       
     - name: Deploy
-      run: surge ./ helloworldapp1bootcamp2020.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ aqibshahhelloworld.surge.sh --token ${{secrets.SURGE_TOKEN}}
